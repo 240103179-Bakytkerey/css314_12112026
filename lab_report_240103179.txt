@@ -1,6 +1,6 @@
 # Performance Evaluation and Optimization in Parallel Computing
 
-Student ID: **240103149**  
+Student ID: **240103179**  
 Platform: **Apple M3, macOS 15.1.1, Python 3.12.7**
 
 ## Measurement scope
@@ -25,7 +25,7 @@ This report consolidates the supplied Phase 0-2 summaries and the locally measur
 
 ## Verification audit
 
-All five hashes reproduce using FNV-1a and the payload format `task_id|240103149|8|metric1:.4f|metric2:.4f`.
+All five hashes reproduce using FNV-1a and the payload format `task_id|240103179|8|metric1:.4f|metric2:.4f`.
 
 | Phase | Primary metric | Secondary metric | Recomputed hash | Result |
 |---|---:|---:|---|---|
