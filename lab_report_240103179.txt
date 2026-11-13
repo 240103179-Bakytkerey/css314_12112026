@@ -442,7 +442,7 @@ from harness import emit_verify_tag
 
 
 def main():
-    student_id = 240103149
+    student_id = 240103179
     reads = 2_000_000
 
     logical_cpus = mp.cpu_count()
@@ -500,7 +500,7 @@ from harness import run_benchmark, emit_verify_tag
 # HARDWARE AND EXPERIMENT CONFIGURATION
 # ==========================================
 
-STUDENT_ID = 240103149
+STUDENT_ID = 240103179
 
 CPU_NAME = "Apple M3"
 P_PHYS = 8
@@ -865,7 +865,7 @@ from harness import emit_verify_tag, run_benchmark
 # ---------------------------------------------------------------------------
 # Configuration from the lab handout and the student's Phase 0 measurements
 # ---------------------------------------------------------------------------
-STUDENT_ID = 240103149
+STUDENT_ID = 240103179
 P_LOG = mp.cpu_count()
 
 N_STRONG = 1_600_000
@@ -1160,7 +1160,7 @@ import sys
 import time
 
 HERE = Path(__file__).resolve().parent
-SID = 240103149
+SID = 240103179
 STATE = HERE / 'continuation_results.json'
 REPORT = HERE / f'lab_report_{SID}.md'
 RAW = HERE / 'continuation_telemetry.txt'
@@ -1511,7 +1511,7 @@ def write_report():
     alpha = phase2['stage_a_weak_p8_ms']/weak[-1][2]
     lines.append(f'\nAt p=8, alpha = 45.9141 / 804.6131 = {alpha:.8f}; Gustafson S = 8-alpha*7 = {8-alpha*7:.4f}. This is a modeled scaled speedup, not an independently measured same-size serial/parallel speedup. Weak efficiency is {weak[0][2]/weak[-1][2]:.4f}. The weak serial stage grows with total N, so fixed work per worker does not keep the serial prefix constant. Weak-scaling p=6 IQR/median = {100*weak[5][3]/weak[5][2]:.2f}%, indicating appreciable run variability.')
     lines.append('```text\n'+phase2['verify']+'\n```')
-    lines.append('The Phase 2 hash recomputes correctly from PHASE2|240103149|8|4.1114|7.6006. Original sub-sample timings were not supplied; derived values use the reported rounded summary.')
+    lines.append('The Phase 2 hash recomputes correctly from PHASE2|240103179|8|4.1114|7.6006. Original sub-sample timings were not supplied; derived values use the reported rounded summary.')
     r = D.get('phase3',{})
     lines.append('\n## Phase 3: Empirical roofline and cache tiling')
     if 'compute' in r and 'bandwidth' in r:
